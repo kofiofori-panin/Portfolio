@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kofi Ofori-Panin | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+      color: #0d6efd;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+    }
+    .footer {
+      background: #0d6efd;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .card {
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .image-pair img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Kofi Ofori-Panin</h1>
+    <p class="lead">Computer Science Student | Web Developer | Creative Artist</p>
+    <p>📍 Accra, Ghana | 📧 oforipaninkofi@gmail.com | 📞 +233 20 538 2853</p>
+  </header>
+
+  <main class="container">
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>I am a passionate Computer Science student in my third year at All Nations University, Koforidua. I have hands-on experience building both responsive web apps and static sites using technologies like HTML, CSS, JavaScript, Bootstrap, Java, and MySQL.</p>
+      <div class="row g-4 image-pair mt-3">
+        <div class="col-md-6">
+          <img src="OPK one.jpg" alt="Me" class="img-fluid shadow-sm" style="max-width: 50%;" />
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="card p-3 mb-3">
+        <h5>Norbus Technology Ltd, Ghana (June – August, 2024 & 2025)</h5>
+        <ul>
+          <li>Developed a responsive web application using HTML, CSS, Bootstrap, and JavaScript (frontend).</li>
+          <li>Implemented backend functionality using Java and MySQL.</li>
+          <li>Built a static user manual website for an e-purse fund management system.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="card p-3 mb-3">
+        <ul>
+          <li><strong>All Nations University, Koforidua</strong> — BSc Computer Science (2023 – Present)</li>
+          <li><strong>University of Ghana, Legon</strong> — Level 100, 2022</li>
+          <li><strong>Achimota School</strong> — Completed SHS in 2021</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="card p-3 mb-3">
+        <h5>WriteRyte AI</h5>
+        <p>An AI-powered proofreading web application built using HTML, Tailwind CSS, JavaScript, and Node.js. It allows users to upload files for grammar, spelling check, and paraphrasing.</p>
+        <p><strong>Live Site:</strong> <a href="https://writeryte-frontend.onrender.com/" target="_blank">writeryte-frontend.onrender.com</a></p>
+        <button class="btn btn-outline-primary mt-2" onclick="alert('Opening WriteRyte AI...')">Visit WriteRyte</button>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="card p-3 mb-3">
+        <ul>
+          <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python</li>
+          <li><strong>Cloud Database:</strong> MySQL</li>
+          <li><strong>Framework:</strong> Bootstrap</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="music">
+      <h2 class="section-title">Creative Side</h2>
+      <div class="card p-3 mb-3">
+        <p><strong>Singer/Songwriter (Realist OPK)</strong> | 2019 – Present</p>
+        <ul>
+          <li>Write, produce, and release original music across Afro genres.</li>
+          <li>Built a growing audience and brand with consistent storytelling.</li>
+          <li>Creative skills: public speaking, content strategy, discipline.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Kofi Ofori-Panin. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Highlight section on hover
+    document.querySelectorAll('section').forEach(section => {
+      section.addEventListener('mouseenter', () => section.style.backgroundColor = '#eef5ff');
+      section.addEventListener('mouseleave', () => section.style.backgroundColor = '');
+    });
+  </script>
+</body>
+</html>
