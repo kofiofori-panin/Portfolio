@@ -1,2 +1,2 @@
 My Portfolio..... 
-Created by my with HTML/CSS and JS
+Created by me with HTML/CSS, Bootstrap and JS
